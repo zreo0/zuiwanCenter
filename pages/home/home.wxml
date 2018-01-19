@@ -1,3 +1,4 @@
-<!--index.wxml-->
-<import src="../../component/filmList/filmList.wxml"/>
-<template is="filmList" data="{{films: films, hasMore: hasMore, showLoading: showLoading, start: start, windowHeight: windowHeight}}"/>
+<!--home.wxml-->
+<view>
+  11111222333
+</view>

@@ -1,0 +1,11 @@
+<view class="container">
+  <swiper class="games-swiper" current="{{current}}" bindchange="handleChange">
+    <block wx:for="{{gamesData}}" wx:key="id" wx:for-index="idx">
+      <swiper-item class="games-swiper-item">
+        <import src="templates/gamesItem.wxml"/>
+        <template is="games-item" data="{{item: item}}"/>
+      </swiper-item>
+    </block>
+    <swiper-item></swiper-item>
+  </swiper>
+</view>

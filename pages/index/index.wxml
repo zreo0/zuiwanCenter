@@ -1,13 +1,11 @@
-<!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <swiper class="vol-swiper" current="{{current}}" bindchange="handleChange">
+    <block wx:for="{{vols}}" wx:for-index="idx" wx:key="{{hpcontent_id}}">
+      <swiper-item class="vol-swiper-item">
+        <import src="templates/volItem.wxml"/>
+        <template is="vol-item" data="{{item: item}}"/>
+      </swiper-item>
     </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+    <swiper-item></swiper-item>
+  </swiper>
 </view>

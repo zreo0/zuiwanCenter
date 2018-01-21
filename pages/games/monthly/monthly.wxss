@@ -1,0 +1,44 @@
+.games {
+  padding: 0 10px;
+}
+
+.games-item {
+  min-height: 45px;
+  margin-top: 5px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.games-cover {
+  float: left;
+}
+
+.games-cover-image {
+  width: 40px;
+  height: 40px;
+}
+
+.games-data {
+  width: 220px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.games-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.games-author {
+  color: #89bdf7;
+  font-size: 12px;
+}
+
+.games-forward {
+  float: right;
+  margin-top: 10px;
+}
+
+.forward {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,32 @@
+<template name="games-item">
+  <scroll-view class="games" scroll-y="true">
+    <view class="games-container">
+      <view class="games-cover">
+        <image class="games-cover-image" src="{{item.cover}}" mode="aspectFill"></image>
+      </view>
+      <view class="games-control">
+        <view class="games-author">
+          <image class="games-author-avatar" src="{{item.author.web_url}}" mode="aspectFill"></image>
+          <view class="games-author-username">
+            <text>{{item.author.user_name}}</text>
+          </view>
+          <view class="games-author-desc">
+            <text>{{item.author.desc}}</text>
+          </view>
+        </view>
+        
+        <view class="games-title">
+          <text>{{item.title}}</text>
+        </view>
+        <view class="games-maketime">
+          <text>{{item.maketime}}</text>
+        </view>
+      </view>
+      <view class="games-content">
+        <include wx:if="{{item.contentType === 'story'}}" src="../includes/story.wxml"/>
+        <include wx:if="{{item.contentType === 'lyric'}}" src="../includes/lyric.wxml"/>
+        <include wx:if="{{item.contentType === 'about'}}" src="../includes/about.wxml"/>
+      </view>
+    </view>
+  </scroll-view>
+</template>

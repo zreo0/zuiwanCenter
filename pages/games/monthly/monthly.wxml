@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="games">
+    <block wx:for="{{gamesData}}" wx:key="id">
+      <view class="games-item" data-id="{{item.id}}" bindtap="handleTap">
+        <view class="games-cover">
+          <image class="games-cover-image" src="{{item.cover}}" mode="aspectFill"></image>
+        </view>
+        <view class="games-data">
+          <view class="games-title">
+            <text>{{item.title}}</text>
+          </view>
+          <view class="games-author">
+            <text>{{item.author.user_name}}</text>
+          </view>
+        </view>
+        <view class="games-forward">
+          <image class="forward" src="../../../image/forward.png"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

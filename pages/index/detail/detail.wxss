@@ -1,14 +1,6 @@
-.vol-swiper {
-  height: 100%;
-}
-
-.vol-swiper-item {
-  padding: 25rpx;
-  box-sizing: border-box;
-}
-
 .vol-card {
   padding: 20rpx;
+  margin: 25rpx;
   border: 1px solid #ebebeb;
   border-radius: 3px;
   box-shadow: 1px 1px 1px #ebebeb;
@@ -37,7 +29,7 @@
 
 .vol-content-text {
   width: 100%;
-  min-height: 200rpx;
+  height: 200rpx;
   display: inline-block;
 }
 

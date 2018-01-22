@@ -43,6 +43,7 @@ Page({
         } 
       })
     } else {
+      console.log('gamesData:', gamesData);
       this.setData({ gamesData })
     }
   },

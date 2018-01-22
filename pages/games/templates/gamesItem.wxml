@@ -24,8 +24,6 @@
       </view>
       <view class="games-content">
         <include wx:if="{{item.contentType === 'story'}}" src="../includes/story.wxml"/>
-        <include wx:if="{{item.contentType === 'lyric'}}" src="../includes/lyric.wxml"/>
-        <include wx:if="{{item.contentType === 'about'}}" src="../includes/about.wxml"/>
       </view>
     </view>
   </scroll-view>
